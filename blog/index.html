@@ -1,0 +1,9 @@
+---
+layout: default
+title: Marc blog posts
+---
+<h2>{{ page.title }}</h2>
+
+{% for post in site.posts %}
+  <span><p>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p></a>
+{% endfor %}

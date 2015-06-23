@@ -1,0 +1,21 @@
+name: Marc Lopez
+description: Marc Lopez's site
+url: http://marclop.github.io/blog
+markdown: kramdown
+
+# Serve info
+baseurl: "" # Don't include hostname
+host:    127.0.0.1
+port:    4000
+detach:  false
+
+# Kramdown specifics
+kramdown:
+  input: GFM
+
+# Blog permalink
+permalink: /blog/:year/:month/:day/:title
+
+# Gems
+gems:
+  - jekyll-sitemap
